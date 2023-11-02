@@ -78,6 +78,9 @@ const project = new cdktf.ConstructLibraryCdktf({
   cdktfVersion: "0.19.0",
   jsiiVersion: "^5.1.0",
   minNodeVersion: "18.12.0",
+  githubOptions: {
+    mergify: false,
+  },
 });
 
 project.addPeerDeps(
