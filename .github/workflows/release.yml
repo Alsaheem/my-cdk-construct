@@ -5,12 +5,6 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - examples/**
-      - .github/ISSUE_TEMPLATE/**
-      - .github/CODEOWNERS
-      - .github/dependabot.yml
-      - .github/**/*.md
   workflow_dispatch: {}
 jobs:
   release:
