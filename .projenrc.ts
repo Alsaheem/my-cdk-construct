@@ -97,7 +97,7 @@ project.addDevDeps(
   "change-case",
   "@action-validator/core",
   "@action-validator/cli",
-  "node-fetch@~2" // @TODO this can be removed once we upgrade to Node 18 and use native fetch
+  "node-fetch@~2" // @TODO this can be removed once we upgrade to Node 18 and use native fetc
 );
 
 new CustomizedLicense(project);
