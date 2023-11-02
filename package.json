@@ -1,9 +1,8 @@
 {
-  "name": "@cdktf/construct-projen-template",
-  "description": "A projen template for CDKTF constructs authored by HashiCorp",
+  "name": "my-cdk-construct",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cdktf/my-cdk-construct.git"
+    "url": "https://github.com/alsaheem/my-cdk-construct.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -26,14 +25,13 @@
     "test:watch": "npx projen test:watch",
     "unbump": "npx projen unbump",
     "upgrade": "npx projen upgrade",
-    "validate-workflows": "npx projen validate-workflows",
     "watch": "npx projen watch",
     "projen": "npx projen"
   },
   "author": {
-    "name": "HashiCorp",
-    "url": "https://hashicorp.com",
-    "organization": true
+    "name": "alsaheem",
+    "email": "adebisiayomide07@gmail.com",
+    "organization": false
   },
   "devDependencies": {
     "@action-validator/cli": "^0.5.3",
@@ -85,10 +83,7 @@
     "node": ">= 18.12.0"
   },
   "main": "lib/index.js",
-  "license": "MPL-2.0",
-  "publishConfig": {
-    "access": "public"
-  },
+  "license": "Apache-2.0",
   "version": "0.0.0",
   "jest": {
     "testMatch": [
@@ -131,7 +126,7 @@
     }
   },
   "types": "lib/index.d.ts",
-  "stability": "experimental",
+  "stability": "stable",
   "jsii": {
     "outdir": "dist",
     "targets": {},
