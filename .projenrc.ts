@@ -52,6 +52,7 @@ const project = new cdktf.ConstructLibraryCdktf({
     email: "github-team-tf-cdk@hashicorp.com",
   },
   stability: Stability.EXPERIMENTAL,
+  release: true,
   npmAccess: NpmAccess.PUBLIC, // change this to PUBLIC to publish to NPM
   releaseToNpm: true, // you probably want to remove this line, assuming you want to publish to NPM // Requires "NPM_TOKEN" secret to be set in the secrets of the Github repository
   // Uncomment the following depending on which package manager(s) you'd like to publish to

@@ -3,7 +3,7 @@
   "description": "A projen template for CDKTF constructs authored by HashiCorp",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cdktf/construct-projen-template.git"
+    "url": "https://github.com/cdktf/my-cdk-construct.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -17,6 +17,7 @@
     "eslint": "npx projen eslint",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
+    "package:js": "npx projen package:js",
     "post-compile": "npx projen post-compile",
     "post-upgrade": "npx projen post-upgrade",
     "pre-compile": "npx projen pre-compile",
@@ -85,6 +86,9 @@
   },
   "main": "lib/index.js",
   "license": "MPL-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.0.0",
   "jest": {
     "testMatch": [
