@@ -1,0 +1,202 @@
+{
+  "//": {
+    "metadata": {
+      "backend": "local",
+      "stackName": "lord-of-the-rings-dev",
+      "version": "0.19.0"
+    },
+    "outputs": {
+      "lord-of-the-rings-dev": {
+        "cloudrun-service": {
+          "brand_website_frontend_external_ip": "cloudrun-service_brand_website_frontend_external_ip_3494DB5B"
+        }
+      }
+    }
+  },
+  "output": {
+    "cloudrun-service_brand_website_frontend_external_ip_3494DB5B": {
+      "value": "${google_compute_global_address.cloudrun-service_brand_website_frontend_ip_D8B75C9F.address}"
+    }
+  },
+  "provider": {
+    "google": [
+      {
+        "region": "europe-west1",
+        "zone": "europe-west1-d"
+      }
+    ],
+    "google-beta": [
+      {
+        "project": "certification-project-362801"
+      }
+    ]
+  },
+  "resource": {
+    "google_cloud_run_service": {
+      "cloudrun-service_brand_website_frontend_439DDCE4": {
+        "//": {
+          "metadata": {
+            "path": "lord-of-the-rings-dev/cloudrun-service/brand_website_frontend",
+            "uniqueId": "cloudrun-service_brand_website_frontend_439DDCE4"
+          }
+        },
+        "location": "europe-west1",
+        "name": "generic-cloudrun-service-dev",
+        "project": "certification-project-362801",
+        "template": {
+          "metadata": {
+            "annotations": {
+              "autoscaling.knative.dev/minScale": "1"
+            },
+            "labels": {
+              "run.googleapis.com/startupProbeType": "Default"
+            }
+          },
+          "spec": {
+            "containers": [
+              {
+                "image": "nginx:latest",
+                "ports": [
+                  {
+                    "container_port": 80,
+                    "name": "http1"
+                  }
+                ],
+                "resources": {
+                  "limits": {
+                    "cpu": "1000m",
+                    "memory": "512Mi"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "google_cloud_run_service_iam_member": {
+      "cloudrun-service_brand_website_frontend_run_member_B7D7E450": {
+        "//": {
+          "metadata": {
+            "path": "lord-of-the-rings-dev/cloudrun-service/brand_website_frontend_run_member",
+            "uniqueId": "cloudrun-service_brand_website_frontend_run_member_B7D7E450"
+          }
+        },
+        "location": "${google_cloud_run_service.cloudrun-service_brand_website_frontend_439DDCE4.location}",
+        "member": "allUsers",
+        "project": "certification-project-362801",
+        "role": "roles/run.invoker",
+        "service": "${google_cloud_run_service.cloudrun-service_brand_website_frontend_439DDCE4.name}"
+      }
+    },
+    "google_compute_backend_service": {
+      "cloudrun-service_brand_website_frontend_backend_service_075F251A": {
+        "//": {
+          "metadata": {
+            "path": "lord-of-the-rings-dev/cloudrun-service/brand_website_frontend_backend_service",
+            "uniqueId": "cloudrun-service_brand_website_frontend_backend_service_075F251A"
+          }
+        },
+        "backend": [
+          {
+            "group": "${google_compute_region_network_endpoint_group.cloudrun-service_brand_website_frontend_endpoint_group_ADB7C2C1.id}"
+          }
+        ],
+        "enable_cdn": true,
+        "load_balancing_scheme": "EXTERNAL",
+        "name": "generic-cloudrun-service-backend-service",
+        "project": "certification-project-362801",
+        "protocol": "HTTPS",
+        "provider": "google-beta"
+      }
+    },
+    "google_compute_global_address": {
+      "cloudrun-service_brand_website_frontend_ip_D8B75C9F": {
+        "//": {
+          "metadata": {
+            "path": "lord-of-the-rings-dev/cloudrun-service/brand_website_frontend_ip",
+            "uniqueId": "cloudrun-service_brand_website_frontend_ip_D8B75C9F"
+          }
+        },
+        "name": "generic-cloudrun-service",
+        "project": "certification-project-362801"
+      }
+    },
+    "google_compute_global_forwarding_rule": {
+      "cloudrun-service_brand_website_frontend_http_forwarding_rule_16764C04": {
+        "//": {
+          "metadata": {
+            "path": "lord-of-the-rings-dev/cloudrun-service/brand_website_frontend_http_forwarding_rule",
+            "uniqueId": "cloudrun-service_brand_website_frontend_http_forwarding_rule_16764C04"
+          }
+        },
+        "ip_address": "${google_compute_global_address.cloudrun-service_brand_website_frontend_ip_D8B75C9F.address}",
+        "load_balancing_scheme": "EXTERNAL",
+        "name": "generic-cloudrun-service-http-fw",
+        "port_range": "80",
+        "provider": "google-beta",
+        "target": "${google_compute_target_http_proxy.cloudrun-service_brand_website_frontend_http_proxy_AD88A4AE.id}"
+      }
+    },
+    "google_compute_region_network_endpoint_group": {
+      "cloudrun-service_brand_website_frontend_endpoint_group_ADB7C2C1": {
+        "//": {
+          "metadata": {
+            "path": "lord-of-the-rings-dev/cloudrun-service/brand_website_frontend_endpoint_group",
+            "uniqueId": "cloudrun-service_brand_website_frontend_endpoint_group_ADB7C2C1"
+          }
+        },
+        "cloud_run": {
+          "service": "${google_cloud_run_service.cloudrun-service_brand_website_frontend_439DDCE4.name}"
+        },
+        "name": "generic-cloudrun-service-endpoint-group",
+        "network_endpoint_type": "SERVERLESS",
+        "provider": "google-beta",
+        "region": "${google_cloud_run_service.cloudrun-service_brand_website_frontend_439DDCE4.location}"
+      }
+    },
+    "google_compute_target_http_proxy": {
+      "cloudrun-service_brand_website_frontend_http_proxy_AD88A4AE": {
+        "//": {
+          "metadata": {
+            "path": "lord-of-the-rings-dev/cloudrun-service/brand_website_frontend_http_proxy",
+            "uniqueId": "cloudrun-service_brand_website_frontend_http_proxy_AD88A4AE"
+          }
+        },
+        "name": "generic-cloudrun-service",
+        "provider": "google-beta",
+        "url_map": "${google_compute_url_map.cloudrun-service_brand_website_frontend_urlmap_66C8776B.id}"
+      }
+    },
+    "google_compute_url_map": {
+      "cloudrun-service_brand_website_frontend_urlmap_66C8776B": {
+        "//": {
+          "metadata": {
+            "path": "lord-of-the-rings-dev/cloudrun-service/brand_website_frontend_urlmap",
+            "uniqueId": "cloudrun-service_brand_website_frontend_urlmap_66C8776B"
+          }
+        },
+        "default_service": "${google_compute_backend_service.cloudrun-service_brand_website_frontend_backend_service_075F251A.id}",
+        "name": "generic-cloudrun-service-urlmap",
+        "provider": "google-beta"
+      }
+    }
+  },
+  "terraform": {
+    "backend": {
+      "local": {
+        "path": "/Users/Ayomide/Desktop/yassir/playground/construct-projen-template/terraform.lord-of-the-rings-dev.tfstate"
+      }
+    },
+    "required_providers": {
+      "google": {
+        "source": "google",
+        "version": "5.4.0"
+      },
+      "google-beta": {
+        "source": "google-beta",
+        "version": "5.4.0"
+      }
+    }
+  }
+}

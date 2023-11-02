@@ -52,8 +52,8 @@ const project = new cdktf.ConstructLibraryCdktf({
     email: "github-team-tf-cdk@hashicorp.com",
   },
   stability: Stability.EXPERIMENTAL,
-  npmAccess: NpmAccess.RESTRICTED, // change this to PUBLIC to publish to NPM
-  releaseToNpm: false, // you probably want to remove this line, assuming you want to publish to NPM
+  npmAccess: NpmAccess.PUBLIC, // change this to PUBLIC to publish to NPM
+  releaseToNpm: true, // you probably want to remove this line, assuming you want to publish to NPM // Requires "NPM_TOKEN" secret to be set in the secrets of the Github repository
   // Uncomment the following depending on which package manager(s) you'd like to publish to
   // publishToPypi: {
   //   distName: name.replace(/^@cdktf\//, "cdktf-"),
@@ -78,14 +78,19 @@ const project = new cdktf.ConstructLibraryCdktf({
   cdktfVersion: "0.19.0",
   jsiiVersion: "^5.1.0",
   minNodeVersion: "18.12.0",
+
 });
 
 project.addPeerDeps(
   "cdktf@>=0.19.0",
+  "@cdktf/provider-google",
+  "@cdktf/provider-google-beta",
   "@cdktf/provider-null@>=9.0.0",
   "constructs@^10.0.25"
 );
 project.addDevDeps(
+  "@cdktf/provider-google",
+  "@cdktf/provider-google-beta",
   "change-case",
   "@action-validator/core",
   "@action-validator/cli",

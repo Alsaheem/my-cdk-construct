@@ -1,0 +1,13 @@
+{
+  "version": "0.19.0",
+  "stacks": {
+    "lord-of-the-rings-dev": {
+      "name": "lord-of-the-rings-dev",
+      "constructPath": "lord-of-the-rings-dev",
+      "workingDirectory": "stacks/lord-of-the-rings-dev",
+      "synthesizedStackPath": "stacks/lord-of-the-rings-dev/cdk.tf.json",
+      "annotations": [],
+      "dependencies": []
+    }
+  }
+}

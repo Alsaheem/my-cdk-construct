@@ -314,6 +314,16 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@cdktf/provider-google-beta@12.0.2":
+  version "12.0.2"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-google-beta/-/provider-google-beta-12.0.2.tgz#903401e34dae5d19dfcfbfa378d2965d9154f8d4"
+  integrity sha512-DS4D2s1soGxjv+iu/3NB/9kBQP5DQ0qadedhbSgvv4Bi2KdhQ0Sfs0Opyy9eqdbUxjY5H8oBjSjVjPfX7Too2A==
+
+"@cdktf/provider-google@12.0.2":
+  version "12.0.2"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-google/-/provider-google-12.0.2.tgz#97c2fc08f124f06a4bfa594188e74541459979e1"
+  integrity sha512-nYf3pHcWgLGgf1UzzN8P2robtrwsz7jhNZ9Asp7ZBW5wJy+MRy8r4xMg4uXa4DySA083WE8vTJwvO13gXBz5tA==
+
 "@cdktf/provider-null@9.0.0":
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/@cdktf/provider-null/-/provider-null-9.0.0.tgz#ee33adc837076ce9f9a54252c846a6344c5abedb"

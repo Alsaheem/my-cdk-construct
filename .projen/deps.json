@@ -9,6 +9,14 @@
       "type": "build"
     },
     {
+      "name": "@cdktf/provider-google",
+      "type": "build"
+    },
+    {
+      "name": "@cdktf/provider-google-beta",
+      "type": "build"
+    },
+    {
       "name": "@types/jest",
       "type": "build"
     },
@@ -126,6 +134,14 @@
     {
       "name": "typescript",
       "type": "build"
+    },
+    {
+      "name": "@cdktf/provider-google",
+      "type": "peer"
+    },
+    {
+      "name": "@cdktf/provider-google-beta",
+      "type": "peer"
     },
     {
       "name": "@cdktf/provider-null",
