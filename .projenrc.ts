@@ -15,7 +15,7 @@ import { UpgradeNode } from "./projenrc/upgrade-node";
 
 // `name` is expected to be in the format "cdktf-project-name" or "@cdktf/project-name"
 const name = "@cdktf/construct-projen-template";
-const shortName = name.replace(/^@?cdktf[-\/]/g, "");
+const shortName = "my-cdk-construct";
 
 const githubActionPinnedVersions = {
   "actions/checkout": "b4ffde65f46336ab88eb53be808477a3936bae11", // v4.1.1
@@ -78,7 +78,6 @@ const project = new cdktf.ConstructLibraryCdktf({
   cdktfVersion: "0.19.0",
   jsiiVersion: "^5.1.0",
   minNodeVersion: "18.12.0",
-
 });
 
 project.addPeerDeps(
