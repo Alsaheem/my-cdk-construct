@@ -23,7 +23,7 @@ export class LordOfTheRingsStack extends TerraformStack {
       image: "nginx:latest",
       containerPort: 80,
       googleBetaProvider: googleBetaProvider,
-      domains: ["adebisiayomide.com"],
+      domains: ["yassir.com"],
       environment: "dev",
       defaultRegion: "europe-west1",
       projectId: project_id,

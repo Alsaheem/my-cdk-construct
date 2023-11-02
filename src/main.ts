@@ -32,6 +32,25 @@ export class YassirHttpCloudRunService extends Construct {
   ) {
     super(scope, id);
 
+    // construct CONTROLS
+    // validateStackName() {
+    //   const shorthand = `-${this.props.environment}`;
+    //   if (!this.id.endsWith(shorthand)) {
+    //     throw new Error(
+    //       `Stack name must end with a dash and the target environment shorthand. E.g. ${shorthand}`,
+    //     );
+    //   }
+    // }
+
+    // validateDomainNameStartsWithYassir() {
+    //   const starsWithYassir = props.domains[0].startsWith("yassir");
+    //   if (!starsWithYassir) {
+    //     throw new Error(
+    //       "Domain name must start with yassir. E.g. yassir.<value>",
+    //     );
+    //   }
+    // }
+
     const cloudrun_service = new cloudRunService.CloudRunService(
       this,
       "brand_website_frontend",
@@ -178,3 +197,5 @@ export class YassirHttpCloudRunService extends Construct {
     });
   }
 }
+
+
