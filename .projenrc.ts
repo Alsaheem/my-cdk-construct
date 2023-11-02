@@ -1,5 +1,4 @@
 import { cdktf } from "projen";
-import { NpmAccess } from "projen/lib/javascript";
 
 const project = new cdktf.ConstructLibraryCdktf({
   author: "alsaheem",
@@ -9,22 +8,16 @@ const project = new cdktf.ConstructLibraryCdktf({
   cdktfVersion: "0.19.0",
   minNodeVersion: "18.12.0",
   name: "my-cdk-construct",
-  npmAccess: NpmAccess.PUBLIC,
   prettier: true,
   projenrcTs: true,
   repositoryUrl: "https://github.com/alsaheem/my-cdk-construct.git",
   githubOptions: {
     mergify: false,
   },
+  releaseToNpm: true,
   // Release Configuration
 
   // Requires "NPM_TOKEN" secret to be set in the secrets of the Github repository
-  releaseToNpm: true,
-
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
 });
 project.addPeerDeps(
   "cdktf@>=0.19.0",

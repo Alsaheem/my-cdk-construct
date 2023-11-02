@@ -42,39 +42,39 @@ Once the repository is created, add the following [GitHub Actions secrets](https
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### YassirHttpCloudRunService <a name="YassirHttpCloudRunService" id="@cdktf/construct-projen-template.YassirHttpCloudRunService"></a>
+### YassirHttpCloudRunService <a name="YassirHttpCloudRunService" id="my-cdk-construct.YassirHttpCloudRunService"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/construct-projen-template.YassirHttpCloudRunService.Initializer"></a>
+#### Initializers <a name="Initializers" id="my-cdk-construct.YassirHttpCloudRunService.Initializer"></a>
 
 ```typescript
-import { YassirHttpCloudRunService } from '@cdktf/construct-projen-template'
+import { YassirHttpCloudRunService } from 'my-cdk-construct'
 
 new YassirHttpCloudRunService(scope: Construct, id: string, props: IYassirCloudRunServiceProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/construct-projen-template.YassirHttpCloudRunService.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#@cdktf/construct-projen-template.YassirHttpCloudRunService.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/construct-projen-template.YassirHttpCloudRunService.Initializer.parameter.props">props</a></code> | <code><a href="#@cdktf/construct-projen-template.IYassirCloudRunServiceProps">IYassirCloudRunServiceProps</a></code> | *No description.* |
+| <code><a href="#my-cdk-construct.YassirHttpCloudRunService.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#my-cdk-construct.YassirHttpCloudRunService.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#my-cdk-construct.YassirHttpCloudRunService.Initializer.parameter.props">props</a></code> | <code><a href="#my-cdk-construct.IYassirCloudRunServiceProps">IYassirCloudRunServiceProps</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/construct-projen-template.YassirHttpCloudRunService.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="my-cdk-construct.YassirHttpCloudRunService.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/construct-projen-template.YassirHttpCloudRunService.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="my-cdk-construct.YassirHttpCloudRunService.Initializer.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="@cdktf/construct-projen-template.YassirHttpCloudRunService.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="my-cdk-construct.YassirHttpCloudRunService.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#@cdktf/construct-projen-template.IYassirCloudRunServiceProps">IYassirCloudRunServiceProps</a>
+- *Type:* <a href="#my-cdk-construct.IYassirCloudRunServiceProps">IYassirCloudRunServiceProps</a>
 
 ---
 
@@ -82,11 +82,11 @@ new YassirHttpCloudRunService(scope: Construct, id: string, props: IYassirCloudR
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/construct-projen-template.YassirHttpCloudRunService.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#my-cdk-construct.YassirHttpCloudRunService.toString">toString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/construct-projen-template.YassirHttpCloudRunService.toString"></a>
+##### `toString` <a name="toString" id="my-cdk-construct.YassirHttpCloudRunService.toString"></a>
 
 ```typescript
 public toString(): string
@@ -98,21 +98,21 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/construct-projen-template.YassirHttpCloudRunService.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#my-cdk-construct.YassirHttpCloudRunService.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/construct-projen-template.YassirHttpCloudRunService.isConstruct"></a>
+##### ~~`isConstruct`~~ <a name="isConstruct" id="my-cdk-construct.YassirHttpCloudRunService.isConstruct"></a>
 
 ```typescript
-import { YassirHttpCloudRunService } from '@cdktf/construct-projen-template'
+import { YassirHttpCloudRunService } from 'my-cdk-construct'
 
 YassirHttpCloudRunService.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/construct-projen-template.YassirHttpCloudRunService.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="my-cdk-construct.YassirHttpCloudRunService.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -124,11 +124,11 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/construct-projen-template.YassirHttpCloudRunService.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#my-cdk-construct.YassirHttpCloudRunService.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/construct-projen-template.YassirHttpCloudRunService.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="my-cdk-construct.YassirHttpCloudRunService.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -145,26 +145,26 @@ The tree node.
 
 ## Protocols <a name="Protocols" id="Protocols"></a>
 
-### IYassirCloudRunServiceProps <a name="IYassirCloudRunServiceProps" id="@cdktf/construct-projen-template.IYassirCloudRunServiceProps"></a>
+### IYassirCloudRunServiceProps <a name="IYassirCloudRunServiceProps" id="my-cdk-construct.IYassirCloudRunServiceProps"></a>
 
-- *Implemented By:* <a href="#@cdktf/construct-projen-template.IYassirCloudRunServiceProps">IYassirCloudRunServiceProps</a>
+- *Implemented By:* <a href="#my-cdk-construct.IYassirCloudRunServiceProps">IYassirCloudRunServiceProps</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/construct-projen-template.IYassirCloudRunServiceProps.property.containerPort">containerPort</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/construct-projen-template.IYassirCloudRunServiceProps.property.defaultRegion">defaultRegion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/construct-projen-template.IYassirCloudRunServiceProps.property.domains">domains</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/construct-projen-template.IYassirCloudRunServiceProps.property.environment">environment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/construct-projen-template.IYassirCloudRunServiceProps.property.googleBetaProvider">googleBetaProvider</a></code> | <code>@cdktf/provider-google-beta.provider.GoogleBetaProvider</code> | *No description.* |
-| <code><a href="#@cdktf/construct-projen-template.IYassirCloudRunServiceProps.property.image">image</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/construct-projen-template.IYassirCloudRunServiceProps.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#my-cdk-construct.IYassirCloudRunServiceProps.property.containerPort">containerPort</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#my-cdk-construct.IYassirCloudRunServiceProps.property.defaultRegion">defaultRegion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#my-cdk-construct.IYassirCloudRunServiceProps.property.domains">domains</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#my-cdk-construct.IYassirCloudRunServiceProps.property.environment">environment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#my-cdk-construct.IYassirCloudRunServiceProps.property.googleBetaProvider">googleBetaProvider</a></code> | <code>@cdktf/provider-google-beta.provider.GoogleBetaProvider</code> | *No description.* |
+| <code><a href="#my-cdk-construct.IYassirCloudRunServiceProps.property.image">image</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#my-cdk-construct.IYassirCloudRunServiceProps.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `containerPort`<sup>Required</sup> <a name="containerPort" id="@cdktf/construct-projen-template.IYassirCloudRunServiceProps.property.containerPort"></a>
+##### `containerPort`<sup>Required</sup> <a name="containerPort" id="my-cdk-construct.IYassirCloudRunServiceProps.property.containerPort"></a>
 
 ```typescript
 public readonly containerPort: number;
@@ -174,7 +174,7 @@ public readonly containerPort: number;
 
 ---
 
-##### `defaultRegion`<sup>Required</sup> <a name="defaultRegion" id="@cdktf/construct-projen-template.IYassirCloudRunServiceProps.property.defaultRegion"></a>
+##### `defaultRegion`<sup>Required</sup> <a name="defaultRegion" id="my-cdk-construct.IYassirCloudRunServiceProps.property.defaultRegion"></a>
 
 ```typescript
 public readonly defaultRegion: string;
@@ -184,7 +184,7 @@ public readonly defaultRegion: string;
 
 ---
 
-##### `domains`<sup>Required</sup> <a name="domains" id="@cdktf/construct-projen-template.IYassirCloudRunServiceProps.property.domains"></a>
+##### `domains`<sup>Required</sup> <a name="domains" id="my-cdk-construct.IYassirCloudRunServiceProps.property.domains"></a>
 
 ```typescript
 public readonly domains: string[];
@@ -194,7 +194,7 @@ public readonly domains: string[];
 
 ---
 
-##### `environment`<sup>Required</sup> <a name="environment" id="@cdktf/construct-projen-template.IYassirCloudRunServiceProps.property.environment"></a>
+##### `environment`<sup>Required</sup> <a name="environment" id="my-cdk-construct.IYassirCloudRunServiceProps.property.environment"></a>
 
 ```typescript
 public readonly environment: string;
@@ -204,7 +204,7 @@ public readonly environment: string;
 
 ---
 
-##### `googleBetaProvider`<sup>Required</sup> <a name="googleBetaProvider" id="@cdktf/construct-projen-template.IYassirCloudRunServiceProps.property.googleBetaProvider"></a>
+##### `googleBetaProvider`<sup>Required</sup> <a name="googleBetaProvider" id="my-cdk-construct.IYassirCloudRunServiceProps.property.googleBetaProvider"></a>
 
 ```typescript
 public readonly googleBetaProvider: GoogleBetaProvider;
@@ -214,7 +214,7 @@ public readonly googleBetaProvider: GoogleBetaProvider;
 
 ---
 
-##### `image`<sup>Required</sup> <a name="image" id="@cdktf/construct-projen-template.IYassirCloudRunServiceProps.property.image"></a>
+##### `image`<sup>Required</sup> <a name="image" id="my-cdk-construct.IYassirCloudRunServiceProps.property.image"></a>
 
 ```typescript
 public readonly image: string;
@@ -224,7 +224,7 @@ public readonly image: string;
 
 ---
 
-##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdktf/construct-projen-template.IYassirCloudRunServiceProps.property.projectId"></a>
+##### `projectId`<sup>Required</sup> <a name="projectId" id="my-cdk-construct.IYassirCloudRunServiceProps.property.projectId"></a>
 
 ```typescript
 public readonly projectId: string;
